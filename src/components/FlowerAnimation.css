@@ -1,0 +1,46 @@
+.animation-wrapper {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #030208;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.three-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.flower-svg {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 900px;
+  height: 100%;
+  max-height: 900px;
+}
+
+.grass-blade {
+  transform-origin: bottom center;
+  opacity: 0.95;
+}
+
+.petal {
+  transform-origin: 0px 0px;
+  fill: rgba(0, 240, 255, 0.35);
+  stroke: #80e5ff;
+  stroke-width: 1.5;
+  filter: drop-shadow(0px 0px 8px rgba(0, 225, 255, 0.8));
+}
+
+.flower-core {
+  transform-origin: center center;
+}
